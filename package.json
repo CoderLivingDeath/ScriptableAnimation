@@ -1,8 +1,8 @@
 {
     "name": "com.cld.scriptable-animation",
     "version": "1.0.0",
-    "displayName": "Your Package Name",
-    "description": "Краткое описание пакета",
+    "displayName": "ScriptableAnimation",
+    "description": "The ScriptableAnimation library provides a flexible way to create, chain, and manage asynchronous animations in Unity using C# delegates and UniTask. It allows for sequential or parallel execution of animations, error handling, completion callbacks, and more.",
     "unity": "2022.3",
     "dependencies": {},
     "keywords": [
@@ -12,6 +12,6 @@
     "author": {
         "name": "CLD",
         "email": "CoderLivingDeath@email.com",
-        "url": "https://github.com/"
+        "url": "https://github.com/CoderLivingDeath"
     }
 }
