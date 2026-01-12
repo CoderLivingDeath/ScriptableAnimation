@@ -2,13 +2,6 @@ using System;
 using System.Threading;
 using Cysharp.Threading.Tasks;
 using UnityEditor;
-public class MyMonoBehaviour : MonoBehaviour
-{
-    private async UniTaskVoid Example()
-    {
-        await UniTask.Delay(1000);
-    }
-}
 
 namespace ScriptableAnimaiton
 {
