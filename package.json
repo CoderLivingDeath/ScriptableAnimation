@@ -1,0 +1,17 @@
+{
+    "name": "com.CLD.ScriptableAnimation",
+    "version": "1.0.0",
+    "displayName": "Your Package Name",
+    "description": "Краткое описание пакета",
+    "unity": "2022.3",
+    "dependencies": {},
+    "keywords": [
+        "unity",
+        "package"
+    ],
+    "author": {
+        "name": "CLD",
+        "email": "CoderLivingDeath@email.com",
+        "url": "https://github.com/"
+    }
+}
