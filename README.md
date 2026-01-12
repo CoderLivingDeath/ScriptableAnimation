@@ -40,9 +40,16 @@ Animation moveAnim = async (token) =>
 Animation fadeAnim = async (token) =>
 {
     var renderer = GetComponent<SpriteRenderer>();
-    await LMotion.Create(renderer.color.a, 0f, 1f)
-        .BindToAlpha(renderer)
-        .ToUniTask(token);
+    float duration = 1f;
+    float startAlpha = renderer.color.a;
+    float endAlpha = 0f;
+
+    for (float t = 0; t < duration; t += Time.deltaTime)
+    {
+        float alpha = Mathf.Lerp(startAlpha, endAlpha, t / duration);
+        renderer.color = new Color(renderer.color.r, renderer.color.g, renderer.color.b, alpha);
+        await UniTask.Yield(token);
+    }
 };
 
 // Chain them sequentially
